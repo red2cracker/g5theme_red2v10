@@ -280,6 +280,15 @@ _:-ms-fullscreen, :root #cse-search-button {
   text-decoration: none;
 }
 
+
+/* 최신글 ROW(반응형) */
+
+.latest_wr_rwd:after{display:block;visibility:hidden;clear:both;content:"";}
+.lt_wr_rwd{width:100%;float:left;}
+.lt_wr_rwd:nth-child(2n+1){clear:both;}
+/*.latest_wr_rwd div:last-child{margin-left: 2%;}*/
+
+
 /* 푸터밖에 있는 SNS 링크 */
 
 
@@ -690,6 +699,12 @@ last-child 가 먹히지 않아서 수동으로 클래스 지정 */
 /*.navbar-brand {
   width: 200px;
 }*/
+
+/* 최신글 ROW(반응형) */
+/* 태블릿 */
+.lt_wr_rwd{width:49%;float:left;}
+.latest_wr_rwd div:last-child{margin-left: 2%;}
+
 
 }
 
