@@ -121,5 +121,11 @@
 	text-decoration: none;
 }
 
+/* 탈퇴 영역 */
+.ol_after_cancel {
+   margin-top: 1em;
+   font-size: 0.9em;
+}
+
 }
 

@@ -23,6 +23,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
     <footer id="ol_after_ft">
         <a href="<?php echo G5_BBS_URL ?>/logout.php?url=<?=$urlencode?>" id="ol_after_logout"><i class="fa fa-sign-out" aria-hidden="true"></i> 로그아웃</a>
         <a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=register_form.php" id="ol_after_info"><i class="fa fa-cog" aria-hidden="true"></i> 정보수정</a>
+		
+		<div class="ol_after_cancel"><a href="javascript:member_leave();"><i class="fa fa-ban" aria-hidden="true"></i> 회원탈퇴</a></div>
     </footer>
 </section>
 
