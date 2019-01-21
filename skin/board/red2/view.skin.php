@@ -12,11 +12,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <article id="bo_v" style="width:<?php echo $width; ?>">
     <header>
+	    <h1 class="bo_v_board_title">
+	        <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $bo_table ?>">
+			    <i class="fa fa-file" aria-hidden="true"></i> <?php echo $board['bo_subject']; ?>
+		    </a>
+	    </h1>
         <h2 id="bo_v_title">
-            <?php if ($category_name) { ?>
-            <span class="bo_v_cate"><?php echo $view['ca_name']; // 분류 출력 끝 ?></span> 
-            <?php } ?>
             <span class="bo_v_tit">
+            <?php if ($category_name) { ?>
+            <?php echo '[' . $view['ca_name'] . ']'; // 분류 출력 끝 ?>
+            <?php } ?>
             <?php
             echo cut_str(get_text($view['wr_subject']), 70); // 글제목 출력
             ?></span>
