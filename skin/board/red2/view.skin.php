@@ -37,6 +37,35 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
     </section>
 
+    <?php if(isset($view['link'][1]) && $view['link'][1]) { ?>
+    <!-- 관련링크 시작 { -->
+    <section id="bo_v_link">
+        <!-- <h2>관련링크</h2> -->
+        <ul>
+        <?php
+        // 링크
+        $cnt = 0;
+        for ($i=1; $i<=count($view['link']); $i++) {
+            if ($view['link'][$i]) {
+                $cnt++;
+                $link = cut_str($view['link'][$i], 70);
+            ?>
+            <li>
+                <i class="fa fa-link" aria-hidden="true"></i> <a href="<?php echo $view['link_href'][$i] ?>" target="_blank">
+                    
+                    <!-- <strong> --><?php echo $link ?><!-- </strong> -->
+                </a>
+                <span class="bo_v_link_cnt"><?php echo $view['link_hit'][$i] ?>회 연결</span>
+            </li>
+            <?php
+            }
+        }
+        ?>
+        </ul>
+    </section>
+    <!-- } 관련링크 끝 -->
+    <?php } ?>
+	
     <section id="bo_v_atc">
         <h2 id="bo_v_atc_title">본문</h2>
 
@@ -64,72 +93,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
         <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
     </section>
-
-    <?php
-    $cnt = 0;
-    if ($view['file']['count']) {
-        for ($i=0; $i<count($view['file']); $i++) {
-            if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view'])
-                $cnt++;
-        }
-    }
-     ?>
-
-    <?php if($cnt) { ?>
-    <!-- 첨부파일 시작 { -->
-    <section id="bo_v_file">
-        <h2>첨부파일</h2>
-        <ul>
-        <?php
-        // 가변 파일
-        for ($i=0; $i<count($view['file']); $i++) {
-            if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
-         ?>
-            <li>
-                <i class="fa fa-download" aria-hidden="true"></i>
-                <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download">
-                    <strong><?php echo $view['file'][$i]['source'] ?></strong>
-                </a>
-                <?php echo $view['file'][$i]['content'] ?> (<?php echo $view['file'][$i]['size'] ?>)
-                <span class="bo_v_file_cnt"><?php echo $view['file'][$i]['download'] ?>회 다운로드 | DATE : <?php echo $view['file'][$i]['datetime'] ?></span>
-            </li>
-        <?php
-            }
-        }
-         ?>
-        </ul>
-    </section>
-    <!-- } 첨부파일 끝 -->
-    <?php } ?>
-
-    <?php if(isset($view['link'][1]) && $view['link'][1]) { ?>
-    <!-- 관련링크 시작 { -->
-    <section id="bo_v_link">
-        <h2>관련링크</h2>
-        <ul>
-        <?php
-        // 링크
-        $cnt = 0;
-        for ($i=1; $i<=count($view['link']); $i++) {
-            if ($view['link'][$i]) {
-                $cnt++;
-                $link = cut_str($view['link'][$i], 70);
-            ?>
-            <li>
-                <i class="fa fa-link" aria-hidden="true"></i> <a href="<?php echo $view['link_href'][$i] ?>" target="_blank">
-                    
-                    <strong><?php echo $link ?></strong>
-                </a>
-                <span class="bo_v_link_cnt"><?php echo $view['link_hit'][$i] ?>회 연결</span>
-            </li>
-            <?php
-            }
-        }
-        ?>
-        </ul>
-    </section>
-    <!-- } 관련링크 끝 -->
-    <?php } ?>
 
     <!-- 게시물 상단 버튼 시작 { -->
     <div id="bo_v_top">
