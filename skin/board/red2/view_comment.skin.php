@@ -15,7 +15,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
     $cmt_amt = count($list);
     for ($i=0; $i<$cmt_amt; $i++) {
         $comment_id = $list[$i]['wr_id'];
-        $cmt_depth = strlen($list[$i]['wr_comment_reply']) * 50;
+        $cmt_depth = strlen($list[$i]['wr_comment_reply']) * 25; /* 50 */
         $comment = $list[$i]['content'];
         /*
         if (strstr($list[$i]['wr_option'], "secret")) {
@@ -137,7 +137,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
         </div>
         <div class="btn_confirm">
             <input type="checkbox" name="wr_secret" value="secret" id="wr_secret">
-            <label for="wr_secret"><i class="fa fa-lock" aria-hidden="true"></i><span class="sound_only">비밀글사용</span></label>
+            <label for="wr_secret" title="비밀글"><i class="fa fa-lock" aria-hidden="true"></i><span class="sound_only">비밀글사용</span></label>
             <input type="submit" id="btn_submit" class="btn_submit" value="댓글등록">
         </div>
     </div>
