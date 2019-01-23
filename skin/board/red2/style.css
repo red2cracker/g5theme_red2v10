@@ -10,12 +10,13 @@
 #bo_list a.btn_admin:focus, #bo_list .btn_admin:hover {}
 
 /* 읽기 버튼 */
-#bo_v a.btn_b01 {}
-#bo_v a.btn_b01:focus, #bo_v a.btn_b01:hover {}
-#bo_v a.btn_b02 {}
-#bo_v a.btn_b02:focus, #bo_v a.btn_b02:hover {}
-#bo_v a.btn_admin {} /* 관리자 전용 버튼 */
-#bo_v a.btn_admin:focus, #bo_v a.btn_admin:hover {}
+/* view.skin.php 뷰 버튼 스타일 재지정 */
+#bo_v a.btn_b01 {color:#fff;}
+#bo_v a.btn_b01:focus, #bo_v a.btn_b01:hover {color:#fff;}
+#bo_v a.btn_b02 {color:#fff;}
+#bo_v a.btn_b02:focus, #bo_v a.btn_b02:hover {color:#fff;}
+#bo_v a.btn_admin {color:#fff;} /* 관리자 전용 버튼 */
+#bo_v a.btn_admin:focus, #bo_v a.btn_admin:hover {color:#fff;}
 
 /* 쓰기 버튼 */
 #bo_w .btn_confirm {} /* 서식단계 진행 */
