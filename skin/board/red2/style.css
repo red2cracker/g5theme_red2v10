@@ -268,8 +268,8 @@ box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 .bo_v_nb li .nb_date{float:right;color:#888}
 
 /* 이전글 다음글 링크 스타일 */
-.bo_v_nb a {color:#00f}
-.bo_v_nb a:hover {color:#f00}
+.bo_v_nb a {color:#00f;text-decoration:none;}
+.bo_v_nb a:hover {color:#f00;text-decoration:none;}
 
 
 #bo_v_atc {min-height:200px;height:auto !important;height:200px;padding:0px}
