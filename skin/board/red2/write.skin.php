@@ -6,7 +6,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 ?>
 
 <section id="bo_w">
-    <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
+    <h2 class="bo_w_title"><i class="fa fa-pencil-square" aria-hidden="true"></i> <?php echo $g5['title'] ?></h2>
 
     <!-- 게시물 작성/수정 시작 { -->
     <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off" style="width:<?php echo $width; ?>">
@@ -74,19 +74,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <label for="wr_password" class="sound_only">비밀번호<strong>필수</strong></label>
         <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="frm_input <?php echo $password_required ?>" placeholder="비밀번호">
     <?php } ?>
-
-    <?php if ($is_email) { ?>
-            <label for="wr_email" class="sound_only">이메일</label>
-            <input type="text" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="frm_input email " placeholder="이메일">
-    <?php } ?>
     </div>
-
-    <?php if ($is_homepage) { ?>
-    <div class="write_div">
-        <label for="wr_homepage" class="sound_only">홈페이지</label>
-        <input type="text" name="wr_homepage" value="<?php echo $homepage ?>" id="wr_homepage" class="frm_input full_input" size="50" placeholder="홈페이지">
-    </div>
-    <?php } ?>
 
     <?php if ($option) { ?>
     <div class="write_div">
