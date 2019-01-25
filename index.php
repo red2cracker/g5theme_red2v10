@@ -13,8 +13,8 @@ include_once(G5_THEME_PATH.'/head.php');
 <h2 class="sound_only">최신글</h2>
 
 <div class="latest_wr_rwd">
-<?php echo latest('theme/red2', 'free', 6, 24); ?>
-<?php echo latest('theme/red2', 'qa', 6, 24); ?>
+<?php echo latest('theme/red2v2', 'free', 6, 24); ?>
+<?php echo latest('theme/red2v2', 'qa', 6, 24); ?>
 </div>
 
 
