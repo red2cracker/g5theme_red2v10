@@ -151,6 +151,10 @@ a:focus, a:hover {
 #cse-keyword {
   width: 170px; /*180px;*/
   padding: 5px 10px;
+  line-height: 28px;
+  /* 구글 검색: ie chrome padding */
+  /* https://stackoverflow.com/questions/9806862/ie-and-chrome-calculating-css-padding-differently */
+  
   border: none;
   /*font-size: 1.2rem;*/
   -webkit-transition: none; /* for 크롬 */
