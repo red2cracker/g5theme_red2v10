@@ -14,18 +14,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
 <!-- 게시판 목록 시작 { -->
 <div id="bo_list" style="width:<?php echo $width; ?>">
-
+	<h1 class="bo_list_board_title">
+	    <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=<?php echo $bo_table ?>">
+		    <i class="fa fa-file" aria-hidden="true"></i> <?php echo $board['bo_subject']; ?>
+	    </a>
+	</h1>
 
     <!-- 게시판 페이지 정보 및 버튼 시작 { -->
     <div id="bo_btn_top">
         <div id="bo_list_total">
-            <span>Total <?php echo number_format($total_count) ?>건</span>
+            <span>전체 <?php echo number_format($total_count) ?>건</span>
             <?php echo $page ?> 페이지
         </div>
 
         <?php if ($rss_href || $write_href) { ?>
         <ul class="btn_bo_user">
-            <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn"><i class="fa fa-rss" aria-hidden="true"></i> RSS</a></li><?php } ?>
             <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn"><i class="fa fa-user-circle" aria-hidden="true"></i> 관리자</a></li><?php } ?>
             <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02 btn"><i class="fa fa-pencil" aria-hidden="true"></i> 글쓰기</a></li><?php } ?>
         </ul>
@@ -70,8 +73,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <th scope="col">제목</th>
             <th scope="col">글쓴이</th>
             <th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 <i class="fa fa-sort" aria-hidden="true"></i></a></th>
-            <?php if ($is_good) { ?><th scope="col"><?php echo subject_sort_link('wr_good', $qstr2, 1) ?>추천 <i class="fa fa-sort" aria-hidden="true"></i></a></th><?php } ?>
-            <?php if ($is_nogood) { ?><th scope="col"><?php echo subject_sort_link('wr_nogood', $qstr2, 1) ?>비추천 <i class="fa fa-sort" aria-hidden="true"></i></a></th><?php } ?>
             <th scope="col"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜  <i class="fa fa-sort" aria-hidden="true"></i></a></th>
         </tr>
         </thead>
@@ -126,8 +127,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             </td>
             <td class="td_name sv_use"><?php echo $list[$i]['name'] ?></td>
             <td class="td_num"><?php echo $list[$i]['wr_hit'] ?></td>
-            <?php if ($is_good) { ?><td class="td_num"><?php echo $list[$i]['wr_good'] ?></td><?php } ?>
-            <?php if ($is_nogood) { ?><td class="td_num"><?php echo $list[$i]['wr_nogood'] ?></td><?php } ?>
             <td class="td_datetime"><?php echo $list[$i]['datetime2'] ?></td>
 
         </tr>
