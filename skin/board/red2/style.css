@@ -113,7 +113,7 @@
 
 #bo_cate {background:#ecf2f3;padding:7px;margin:10px 0;border:1px solid #bed1d4}
 #bo_cate h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_cate ul {zoom:1}
+#bo_cate ul {margin:0px;zoom:1}
 #bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_cate li {display:inline-block;padding:2px;}
 #bo_cate a {display:block;line-height:26px;padding:0 10px;border-radius:3px;border:1px solid transparent}
@@ -124,13 +124,16 @@
 box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
 .td_subject img {margin-left:5px}
 
+
+
+
 /* 게시판 목록 공통 */
 #bo_btn_top{margin: 10px 0 }
 #bo_btn_top:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_fx {margin-bottom:5px;float:right;zoom:1}
 .bo_fx:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_fx ul {margin:0;padding:0;list-style:none}
-#bo_list_total {float:left;line-height:30px;font-size:0.92em;color:#4e546f;background:#d4d4d4;padding:0 10px;border-radius:5px;}
+#bo_list_total {float:left;line-height:30px;font-size:0.92em;} /* color:#4e546f;background:#d4d4d4;padding:0 10px;border-radius:5px; */
 
 .btn_bo_user {float:right;margin:0;padding:0;list-style:none}
 .btn_bo_user li {float:left;margin-left:5px}
@@ -142,8 +145,15 @@ box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
 
 .bo_notice .notice_icon{display:inline-block;background:#4158d1;width:25px;line-height:25px;border-radius:5px;font-weight:normal;color:#fff}
 .td_num strong {color:#000}
-.bo_cate_link {display: inline-block;color: #3497d9;height: 20px;font-size:0.92em} /* 글제목줄 분류스타일 */
-.bo_tit{display:inline-block;color:#000;font-weight:bold;}
+.bo_cate_link {display: inline-block;color: #000000;height: 20px;font-size:0.92em;font-weight:bold;border-right:1px solid #ccc;
+padding-right:6px;} /* 글제목줄 분류스타일 ;color: #3497d9; */
+.bo_cate_link:hover {color:#ff0000;}
+
+.bo_tit{display:inline-block;color:#000000;font-weight:normal;}
+.bo_tit a {color:#000000;}
+.bo_tit a:hover {color:#ff0000;}
+
+
 .bo_current {color:#e8180c}
 /*#bo_list .profile_img {display:inline-block;margin-right:2px}*/
 #bo_list .profile_img img{border-radius:50%}
