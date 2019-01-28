@@ -157,12 +157,12 @@ box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
 .bo_notice .notice_icon{display:inline-block;background:#4158d1;width:25px;line-height:25px;border-radius:5px;font-weight:normal;color:#fff}
 .td_num strong {color:#000}
 .bo_cate_link {display: inline-block;color: #000000;height: 20px;font-size:0.92em;font-weight:bold;border-right:1px solid #ccc;
-padding-right:6px;} /* 글제목줄 분류스타일 ;color: #3497d9; */
+padding-right:6px;text-decoration:none !important;} /* 글제목줄 분류스타일 ;color: #3497d9; */
 .bo_cate_link:hover {color:#ff0000;}
 
 .bo_tit{display:inline-block;color:#000000;font-weight:normal;}
-.bo_tit a {color:#000000;}
-.bo_tit a:hover {color:#ff0000;}
+.bo_tit a {color:#000000;text-decoration:none;}
+.bo_tit a:hover {color:#ff0000;text-decoration:none;}
 
 
 .bo_current {color:#e8180c}
