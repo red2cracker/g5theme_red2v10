@@ -43,6 +43,11 @@
 #bo_list .tbl_head01 a {}
 #bo_list td.empty_table {}
 
+#bo_list .tbl_head01 thead th {font-weight:bold;}
+#bo_list .tbl_head01 thead a {color:#000;text-decoration:none;}
+#bo_list .tbl_head01 thead a:hover {color:#f00;}
+
+
 
 /* 읽기 내 테이블 */
 #bo_v .tbl_head01 {}
@@ -98,7 +103,7 @@
 #bo_list .td_board {width:120px;text-align:center}
 #bo_list .td_chk {width:30px;text-align:center;}
 #bo_list .td_date {width:60px;text-align:center;font-style: italic;}
-#bo_list .td_datetime {width:60px;text-align:center;font-style: italic}
+#bo_list .td_datetime {width:60px;text-align:center;}/* ;font-style: italic; */
 #bo_list .td_group {width:100px;text-align:center}
 #bo_list .td_mb_id {width:100px;text-align:center}
 #bo_list .td_mng {width:80px;text-align:center}
@@ -116,8 +121,8 @@
 #bo_cate ul {margin:0px;zoom:1}
 #bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_cate li {display:inline-block;padding:2px;}
-#bo_cate a {display:block;line-height:26px;padding:0 10px;border-radius:3px;border:1px solid transparent}
-#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {text-decoration:none;background:#d2d6dc;}
+#bo_cate a {display:block;line-height:26px;padding:0 10px;border-radius:3px;border:1px solid transparent;color:#000;}
+#bo_cate a:focus, #bo_cate a:hover, #bo_cate a:active {text-decoration:none;background:#d2d6dc;color:#f00;}
 #bo_cate #bo_cate_on {z-index:2;background:#3497d9;color:#fff;font-weight:bold;border-bottom-color:#1977b5;
 -webkit-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 -moz-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
