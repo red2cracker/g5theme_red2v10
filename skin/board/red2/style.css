@@ -368,7 +368,7 @@ box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 #bo_vc .sv_wrap a:hover {color:#f00 !important} /* 댓글 닉네임에 마우스 올릴시 색상 */
 #bo_vc .sv_wrap .sv a:hover{color:#fff !important;text-decoration:none} /* 사이드뷰 호버 색상 재지정 */
 
-.bo_vc_hdinfo{float:right;font-style:italic;color:#777}
+.bo_vc_hdinfo{float:right;color:#777} /* font-style:italic; */
 #bo_vc h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #bo_vc .cmt_contents {padding:15px  ;margin:10px 0 0;background: #f8fafb;border-radius:5px;border: 1px solid #e8e8e8;line-height:1.8em}
 #bo_vc p a {text-decoration:underline}
