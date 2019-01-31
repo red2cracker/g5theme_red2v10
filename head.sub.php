@@ -53,7 +53,31 @@ if($config['cf_add_meta'])
 <title><?php echo $g5_head_title; ?></title>
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/<?php echo G5_IS_MOBILE ? 'mobile' : 'default'; ?>.css?ver=<?php echo G5_CSS_VER; ?>">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<?php
+/* 현재 파일 이름에 따라 특정 스타일 시트를 해제 또는 보여줌 */
+$pagename = basename($_SERVER['PHP_SELF']);
+
+if($pagename == "memo.php") {
+    echo "";
+} else if($pagename == "memo_form.php") {
+    echo "";
+} else if($pagename == "memo_view.php") {
+    echo "";
+} else if($pagename == "login.php") {
+    echo "";
+} else if($pagename == "password_lost.php") {
+    echo "";
+} else if($pagename == "member_confirm.php") {
+    echo "";
+} else {
+    echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">'.PHP_EOL;
+}
+?>
+<!-- php 파일명에 따라 부트스트랩 CSS를 제어한다 -->
+
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
+<!-- 원래 4.0.0 베타 2를 사용했음 -->
+
 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
 
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/red2style.css">
