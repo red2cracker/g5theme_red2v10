@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 고정 네비게이션 때문에 본문 위쪽에 마진 추가 */
+
+.div-border {
+  margin-top: 5.063rem !important; /* CSS가 밀려서 적용되지 않으므로 임포턴트로 우선 순위 지정 */
+}
+
+
+/* Medium devices (tablets, 769px and up) */
+@media (min-width: 769px) {
+
+.div-border {
+  margin-top: 6.688rem !important;
+}
+
+}
+
+
