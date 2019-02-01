@@ -7,8 +7,9 @@
 }
 
 
-/* Medium devices (tablets, 769px and up) */
-@media (min-width: 769px) {
+/* Large devices (desktops, 992px and up) */
+/* PC부터 상단 마진이 증가한다 */
+@media (min-width: 992px) {
 
 .div-border {
   margin-top: 6.688rem !important;
