@@ -31,10 +31,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle main-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           메인
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu main-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=news">뉴스</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=notice">공지사항</a>
           <!-- <a class="dropdown-item" href="#">게임 리그</a> -->
@@ -72,10 +72,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         </div>
       </li> -->
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle comm-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           커뮤니티
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu comm-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=free">자유 게시판</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=cnc">C&amp;C 게시판</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=qna">Q&amp;A 게시판</a>
@@ -88,10 +88,10 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle nav-link-last" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle down-link nav-link-last" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           자료실
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div class="dropdown-menu down-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=patch">패치</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=mod">모드</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=mod_tool">모드 툴</a>

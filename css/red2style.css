@@ -100,8 +100,10 @@ a:focus, a:hover {
   color: #fff;
 }
 
+/* 메뉴 목록에 마우스를 올렸다가 내리면 링크가 흰색이 되는 버그 해결 */
+/* red2custom.js 와 연동 */
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #f00;
+  color: #f00 !important;
 }
 
 /* 드롭다운 메뉴 링크색 */
@@ -664,8 +666,10 @@ last-child 가 먹히지 않아서 수동으로 클래스 지정 */
   color: #fff;
 }
 
+/* 메뉴 목록에 마우스를 올렸다가 내리면 링크가 흰색이 되는 버그 해결 */
+/* red2custom.js 와 연동 */
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-  color: #f00;
+  color: #f00 !important;
 }
 
 /* 드롭다운 메뉴 */
@@ -709,6 +713,18 @@ last-child 가 먹히지 않아서 수동으로 클래스 지정 */
 .lt_wr_rwd{width:49%;float:left;}
 .latest_wr_rwd div:last-child{margin-left: 2%;}
 
+/*
+div.dropdown-menu:hover a.nav-link {
+  color:#f00 !important;
+  background-color:#f00 !important;
+}
+*/
+
+/*
+a.nav-link {
+  color:#f00 !important;
+}
+*/
 
 }
 
