@@ -857,6 +857,15 @@ _:-ms-fullscreen, :root #cse-search-button {
 }
 
 
+@media (min-width: 1440px) {
 
+nav.navbar {
+  background-image: url("../img/main_image.png");
+  background-repeat: no-repeat;
+  background-position: center right 240px;
+  /* 참고: https://developer.mozilla.org/en-US/docs/Web/CSS/background-position */
+}
+
+}
 
 
