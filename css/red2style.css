@@ -856,9 +856,10 @@ _:-ms-fullscreen, :root #cse-search-button {
 
 }
 
-
+/* 구글 개발자 도구 Laptop L */
 @media (min-width: 1440px) {
 
+/* 1440픽셀 이상이 되면 상위 메뉴에 배경 이미지 출력 */
 nav.navbar {
   background-image: url("../img/main_image.png");
   background-repeat: no-repeat;
