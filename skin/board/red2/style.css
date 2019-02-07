@@ -259,6 +259,8 @@ box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 display:inline-block;/*background-color:#ccc;*/width:120px;/*height:30px;*/
 overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-top:5px;}
 
+/* 게시판 목록 사이드뷰 위치 조정 */
+#bo_list .tbl_head01 .sv_wrap .sv{top:17px;}
 
 
 #bo_v_info:after {display:block;visibility:hidden;clear:both;content:""} 
