@@ -184,16 +184,16 @@ padding-right:6px;text-decoration:none !important;position:relative;top:-5px;} /
 box-shadow: inset 0 2px 5px  rgba(255,255,255,0.3);*/
 font-weight:bold;position:relative;top:-5px;}
 
+/* 게시판 리스트 제목 스타일 짜름 */
 #bo_list .subject_trim{display:inline-block;/*max-width:310px;*/overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-top:5px;}
 
+/* 해상도마다 짜르는 길이가 다름 */
 @media (min-width: 768px) {
 #bo_list .subject_trim {max-width: 140px;}
 }
-
 @media (min-width: 1024px) {
 #bo_list .subject_trim {max-width: 310px;}
 }
-
 @media (min-width: 1440px) {
 #bo_list .subject_trim {max-width: none;}
 }
