@@ -142,6 +142,9 @@
 box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
 .td_subject img {margin-left:5px}
 
+/* 게시판 목록 답변 아이콘 스타일 조정 */
+.td_subject img.icon_reply {margin-left:0px;position:relative;top:-5px;}
+
 
 
 
