@@ -111,7 +111,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                         <?php
                             if (isset($list[$i]['icon_secret'])) echo rtrim($list[$i]['icon_secret']);
                          ?>
-                        <?php echo $list[$i]['subject'] ?>
+                        <span class="subject_trim"><?php echo $list[$i]['subject'] ?></span>
                        
                     
                     <?php
