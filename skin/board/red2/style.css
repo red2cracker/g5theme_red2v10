@@ -201,6 +201,23 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list .subject_trim{max-width: none;}
 }
 
+/* 게시판 목록 스마트폰 스타일 */
+@media (max-width: 767px) {
+
+#bo_list .cell_hidden {
+  display: none;
+}
+
+
+
+
+
+
+/* 스타일 끝 */
+}
+
+
+
 
 
 

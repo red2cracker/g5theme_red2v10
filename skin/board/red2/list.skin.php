@@ -69,11 +69,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);">
             </th>
             <?php } ?>
-            <th scope="col">번호</th>
-            <th scope="col">제목</th>
-            <th scope="col">글쓴이</th>
-            <th scope="col"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜  <i class="fa fa-sort" aria-hidden="true"></i></a></th>
-            <th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 <i class="fa fa-sort" aria-hidden="true"></i></a></th>
+            <th scope="col" class="cell_hidden">번호</th>
+            <th scope="col" class="cell_hidden">제목</th>
+            <th scope="col" class="cell_hidden">글쓴이</th>
+            <th scope="col" class="cell_hidden"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜  <i class="fa fa-sort" aria-hidden="true"></i></a></th>
+            <th scope="col" class="cell_hidden"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 <i class="fa fa-sort" aria-hidden="true"></i></a></th>
 			</tr>
         </thead>
         <tbody>
@@ -87,7 +87,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>">
             </td>
             <?php } ?>
-            <td class="td_num2">
+            <td class="td_num2 cell_hidden">
             <?php
             if ($list[$i]['is_notice']) // 공지사항
                 echo '<strong class="notice_icon"><i class="fa fa-bullhorn" aria-hidden="true"></i><span class="sound_only">공지</span></strong>';
