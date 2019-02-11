@@ -167,7 +167,7 @@ box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
 .bo_notice .notice_icon{display:inline-block;background:#4158d1;width:25px;line-height:25px;border-radius:5px;font-weight:normal;color:#fff}
 .td_num strong {color:#000}
 .bo_cate_link {display: inline-block;color: #000000;/*height: 20px;*/font-size:0.92em;font-weight:bold;border-right:1px solid #ccc;
-padding-right:6px;text-decoration:none !important;position:relative;top:-5px;} /* 글제목줄 분류스타일 ;color: #3497d9; */
+padding-right:6px;text-decoration:none !important;/*position:relative;top:-5px;*/} /* 글제목줄 분류스타일 ;color: #3497d9; */
 .bo_cate_link:hover {color:#ff0000;}
 
 .bo_tit{display:inline-block;color:#000000;font-weight:normal;}
@@ -182,20 +182,23 @@ padding-right:6px;text-decoration:none !important;position:relative;top:-5px;} /
 /*-webkit-box-shadow: inset 0 2px 5px  rgba(255,255,255,0.3);
 -moz-box-shadow: inset 0 2px 5px  rgba(255,255,255,0.3);
 box-shadow: inset 0 2px 5px  rgba(255,255,255,0.3);*/
-font-weight:bold;position:relative;top:-5px;}
+font-weight:bold;/*position:relative;top:-5px;*/}
 
 /* 게시판 리스트 제목 스타일 짜름 */
-#bo_list .subject_trim{display:inline-block;/*max-width:310px;*/overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-top:5px;}
+/*#bo_list .subject_trim{display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-top:5px;}*//*max-width:310px;*/
 
 /* 해상도마다 짜르는 길이가 다름 */
 @media (min-width: 768px) {
-#bo_list .subject_trim {max-width: 140px;}
+/* 댓글수, 카테고리명 밑으로 쳐지는 버그 해결 */
+#bo_list .cnt_cmt, #bo_list .bo_cate_link{position:relative;top:-5px;}
+#bo_list .subject_trim{max-width: 130px;
+display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;padding-top:5px;}
 }
 @media (min-width: 1024px) {
-#bo_list .subject_trim {max-width: 310px;}
+#bo_list .subject_trim{max-width: 310px;}
 }
 @media (min-width: 1440px) {
-#bo_list .subject_trim {max-width: none;}
+#bo_list .subject_trim{max-width: none;}
 }
 
 
