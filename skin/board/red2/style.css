@@ -249,7 +249,8 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list .td_num {
   /*width: 150px;*/
   width: calc(100% - 180px);
-  border-bottom: 1px solid #000;
+  /*border-bottom: 1px solid #000;*/
+  text-align: left;
 }
 
 #bo_list .bo_cate_link, #bo_list .subject_trim {
