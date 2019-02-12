@@ -227,6 +227,10 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   clear: both;
 }
 
+#bo_list tbody td {
+  border: 0px;
+}
+
 #bo_list .td_chk {
   position: absolute;
   top: 8px;
@@ -239,6 +243,13 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list .td_name, #bo_list .td_datetime, #bo_list .td_num {
   display: inline-block;
   float: left;
+  border-bottom: 1px solid #000;
+}
+
+#bo_list .td_num {
+  /*width: 150px;*/
+  width: calc(100% - 180px);
+  border-bottom: 1px solid #000;
 }
 
 #bo_list .bo_cate_link, #bo_list .subject_trim {
