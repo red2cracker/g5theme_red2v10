@@ -208,8 +208,68 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   display: none;
 }
 
+#bo_list table,
+#bo_list thead,
+#bo_list tbody,
+#bo_list tr,
+#bo_list th,
+#bo_list td {
+  display: block;
+}
 
+#bo_list .td_subject {
+  width: 100%;
+  display: inline-block;
+}
 
+#bo_list tbody tr {
+  position: relative;
+  clear: both;
+}
+
+#bo_list .td_chk {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  width: auto !important;
+  height: auto !important;
+}
+
+#bo_list .td_name, #bo_list .td_datetime, #bo_list .td_num {
+  display: inline-block;
+  float: left;
+}
+
+#bo_list .bo_cate_link, #bo_list .subject_trim {
+  position: relative;
+  top: 10px;
+}
+
+#bo_list .td_name .sv_member, #bo_list .td_name .sv_guest {
+  padding-top: 9px !important;
+  padding-left: 5px !important;
+}
+
+#bo_list .td_datetime, #bo_list .td_num {
+  padding-top: 9px !important;
+}
+
+#bo_list .cnt_cmt {
+  position: relative;
+  top: 10px;
+}
+
+/* 테이블 행에 호버시 왼쪽 외곽선 삭제 */
+#bo_list tbody tr:hover {
+  border-left: 0px;
+}
+
+/* 맨 아래 텍스트가 튀어나오는 버그 */
+#bo_list table {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
 
 
 

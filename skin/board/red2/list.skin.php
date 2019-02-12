@@ -61,7 +61,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <div class="tbl_head01 tbl_wrap">
         <table>
         <caption><?php echo $board['bo_subject'] ?> 목록</caption>
-        <thead>
+        <thead class="cell_hidden">
         <tr>
             <?php if ($is_checkbox) { ?>
             <th scope="col">
@@ -69,11 +69,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);">
             </th>
             <?php } ?>
-            <th scope="col" class="cell_hidden">번호</th>
-            <th scope="col" class="cell_hidden">제목</th>
-            <th scope="col" class="cell_hidden">글쓴이</th>
-            <th scope="col" class="cell_hidden"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜  <i class="fa fa-sort" aria-hidden="true"></i></a></th>
-            <th scope="col" class="cell_hidden"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 <i class="fa fa-sort" aria-hidden="true"></i></a></th>
+            <th scope="col">번호</th>
+            <th scope="col">제목</th>
+            <th scope="col">글쓴이</th>
+            <th scope="col"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜  <i class="fa fa-sort" aria-hidden="true"></i></a></th>
+            <th scope="col"><?php echo subject_sort_link('wr_hit', $qstr2, 1) ?>조회 <i class="fa fa-sort" aria-hidden="true"></i></a></th>
 			</tr>
         </thead>
         <tbody>
