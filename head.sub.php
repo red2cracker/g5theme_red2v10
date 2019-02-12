@@ -73,6 +73,8 @@ if($pagename == "memo.php") {
     echo "";
 } else if($pagename == "profile.php") {
     echo "";
+} else if($pagename == "move.php") {
+    echo "";
 } else {
     echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">'.PHP_EOL;
 	echo '<link rel="stylesheet" href="'.G5_THEME_CSS_URL.'/red2fixed.css">'.PHP_EOL;
