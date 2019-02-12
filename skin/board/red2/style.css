@@ -253,6 +253,10 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   text-align: left;
 }
 
+#bo_list .td_num:before {
+  content: "조회 ";
+}
+
 #bo_list .bo_cate_link, #bo_list .subject_trim {
   position: relative;
   top: 10px;
