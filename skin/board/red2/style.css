@@ -208,6 +208,10 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   display: none;
 }
 
+#bo_list table {
+  border-bottom: 0px;
+}
+
 #bo_list table,
 #bo_list thead,
 #bo_list tbody,
@@ -245,6 +249,8 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   float: left;
   border-bottom: 1px solid #000;
 }
+
+
 
 #bo_list .td_num {
   /*width: 150px;*/
