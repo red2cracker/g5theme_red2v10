@@ -229,7 +229,6 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list tbody tr {
   position: relative;
   clear: both;
-  /*height: 60px;*/
 }
 
 #bo_list tbody td {
@@ -309,6 +308,15 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   position: relative;
   top: 5px;
 }
+
+/*
+#bo_list .td_subject,
+#bo_list .td_name,
+#bo_list .td_datetime,
+#bo_list .td_num {
+  height: 20px;
+}
+*/
 
 
 
