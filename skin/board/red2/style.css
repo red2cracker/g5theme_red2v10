@@ -257,7 +257,7 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   content: "조회 ";
 }
 
-#bo_list .bo_cate_link, #bo_list .subject_trim {
+#bo_list .bo_cate_link, #bo_list .subject_trim, #bo_list .icon_reply {
   position: relative;
   top: 10px;
 }
