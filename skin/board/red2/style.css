@@ -229,6 +229,7 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list tbody tr {
   position: relative;
   clear: both;
+  /*height: 60px;*/
 }
 
 #bo_list tbody td {
@@ -237,7 +238,7 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 
 #bo_list .td_chk {
   position: absolute;
-  top: 8px;
+  top: 6px;
   right: 6px;
   width: auto !important;
   height: auto !important;
@@ -263,9 +264,16 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   content: "조회 ";
 }
 
+/*
 #bo_list .bo_cate_link, #bo_list .subject_trim, #bo_list .icon_reply {
   position: relative;
   top: 10px;
+}
+*/
+
+#bo_list .bo_cate_link, #bo_list .icon_reply {
+  position: relative;
+  top: 0px;
 }
 
 #bo_list .td_name .sv_member, #bo_list .td_name .sv_guest {
@@ -279,7 +287,7 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 
 #bo_list .cnt_cmt {
   position: relative;
-  top: 10px;
+  top: 0px;
 }
 
 /* 테이블 행에 호버시 왼쪽 외곽선 삭제 */
@@ -292,6 +300,14 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   width: 100%;
   float: left;
   margin-bottom: 10px;
+}
+
+#bo_list .subject_trim {
+  max-width: 180px;
+  /*max-width: calc(100% - 10px);*/
+  display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+  position: relative;
+  top: 5px;
 }
 
 
