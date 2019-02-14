@@ -20,6 +20,24 @@ $(function() {
 </script>
 <![endif]-->
 
+<script>
+
+$(document).ready(function() {
+
+$("#bo_list tbody tr").eq(0).click(function() {
+    var href = $("#bo_list .td_subject .bo_tit a").eq(0).attr("href");
+    $(location).attr('href',href);
+	
+    //alert(href);
+});
+    
+/*$('tbody tr td').eq(1).css("background-color", "red");*/
+/*$('#bo_list_total').css("background-color", "red");*/
+//alert('테스트');
+});
+
+</script>
+
 </body>
 </html>
 <?php echo html_end(); // HTML 마지막 처리 함수 : 반드시 넣어주시기 바랍니다. ?>

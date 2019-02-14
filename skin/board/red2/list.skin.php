@@ -254,6 +254,8 @@ function select_copy(sw) {
     f.action = "./move.php";
     f.submit();
 }
+
+
 </script>
 <?php } ?>
 <!-- } 게시판 목록 끝 -->
