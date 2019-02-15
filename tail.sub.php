@@ -54,13 +54,13 @@ for(a = 0; a <= tbody_tr_count; a++){
 
 var width_size = window.outerWidth;
 
-$(window).resize(function (){
+$(window).load(function (){
   if (width_size <= 767) {
     add_href();
   }
 });
 
-$(window).load(function (){
+$(window).resize(function (){
   if (width_size <= 767) {
     add_href();
   }
