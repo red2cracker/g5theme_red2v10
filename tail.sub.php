@@ -24,16 +24,28 @@ $(function() {
 
 $(document).ready(function() {
 
-$("#bo_list tbody tr").eq(0).click(function() {
-    var href = $("#bo_list .td_subject .bo_tit a").eq(0).attr("href");
+
+function tbody_tr_href(a) {
+
+//eq(0-14)
+$("#bo_list tbody tr").eq(a).click(function() {
+    var href = $("#bo_list .td_subject .bo_tit a").eq(a).attr("href");
     $(location).attr('href',href);
 	
     //alert(href);
 });
-    
-/*$('tbody tr td').eq(1).css("background-color", "red");*/
-/*$('#bo_list_total').css("background-color", "red");*/
-//alert('테스트');
+
+}
+
+
+var tbody_tr_count = $("#bo_list tbody tr").length -1; //15 - 1 = 14
+
+for(a = 0; a <= tbody_tr_count; a++){
+  tbody_tr_href(a);
+  //alert(a);
+}
+
+
 });
 
 </script>
