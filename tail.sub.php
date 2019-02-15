@@ -40,10 +40,31 @@ $("#bo_list tbody tr").eq(a).click(function() {
 
 var tbody_tr_count = $("#bo_list tbody tr").length -1; //15 - 1 = 14
 
+function add_href() {
+
 for(a = 0; a <= tbody_tr_count; a++){
   tbody_tr_href(a);
   //alert(a);
 }
+
+}
+
+//add_href();
+
+
+var width_size = window.outerWidth;
+
+$(window).resize(function (){
+  if (width_size <= 767) {
+    add_href();
+  }
+});
+
+$(window).load(function (){
+  if (width_size <= 767) {
+    add_href();
+  }
+});
 
 
 });
