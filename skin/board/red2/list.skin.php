@@ -38,12 +38,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
     <!-- 게시판 카테고리 시작 { -->
     <?php if ($is_category) { ?>
-    <nav id="bo_cate">
-        <h2><?php echo $board['bo_subject'] ?> 카테고리</h2>
-        <ul id="bo_cate_ul">
-            <?php echo $category_option ?>
-        </ul>
-    </nav>
+    <form name="fcategory" method="get" class="bo_cate_select">
+    <input type="hidden" name="bo_table" value="<?php echo $bo_table; ?>">
+    <select name="sca">
+        <option value=''>전체</option>
+        <?php echo get_category_option($bo_table, $sca); // SELECT OPTION 태그로 넘겨받음 ?>
+    </select>
+    <input type="submit" value="확인">
+    </form>
     <?php } ?>
     <!-- } 게시판 카테고리 끝 -->
 

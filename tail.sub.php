@@ -56,13 +56,15 @@ var width_size = window.outerWidth;
 
 $(window).load(function (){
   if (width_size <= 767) {
-    add_href();
+    //add_href();
+	//alert('test');
   }
 });
 
 $(window).resize(function (){
   if (width_size <= 767) {
-    add_href();
+    //add_href();
+	//alert('test');
   }
 });
 
