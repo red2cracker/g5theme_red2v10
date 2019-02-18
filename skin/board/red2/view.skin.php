@@ -108,18 +108,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             <?php if ($search_href) { ?><li><a href="<?php echo $search_href ?>" class="btn_b01 btn"><i class="fa fa-search" aria-hidden="true"></i> 검색</a></li><?php } ?>
         </ul>
 
-		
-		
         <ul class="bo_v_com">
-		   <li><a class="btn_b01 btn" onclick="new_up()"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 점프</a></li>
+		   <!-- <li><a class="btn_b01 btn" onclick="new_up()"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 점프</a></li> -->
+		   
+		   <!-- http://www.happyjung.com/lecture/2718 -->
+		   <?php if($is_admin || $update_href) { ?><li><a href="<?php echo $board_skin_url; ?>/update_first.php?bo_table=<?php echo $bo_table; ?>&wr_id=<?php echo $wr_id; ?>" class="btn_b01 btn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 위로</a></li><?php } ?>
 		   
            <li><a href="<?php echo $list_href ?>" class="btn_b01 btn"><i class="fa fa-list" aria-hidden="true"></i> 목록</a></li>
             <?php if ($reply_href) { ?><li><a href="<?php echo $reply_href ?>" class="btn_b01 btn"><i class="fa fa-reply" aria-hidden="true"></i> 답변</a></li><?php } ?>
             <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02 btn"><i class="fa fa-pencil" aria-hidden="true"></i> 글쓰기</a></li><?php } ?>
         </ul>
 
-		
-		
         <?php if ($prev_href || $next_href) { ?>
         <ul class="bo_v_nb">
             <?php if ($prev_href) { ?><li class="btn_prv"><span class="nb_tit"><i class="fa fa-caret-up" aria-hidden="true"></i> 이전글</span><a href="<?php echo $prev_href ?>"><?php echo $prev_wr_subject;?></a> <span class="nb_date"><?php echo str_replace('-', '.', substr($prev_wr_date, '2', '8')); ?></span></li><?php } ?>
