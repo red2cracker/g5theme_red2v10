@@ -12,7 +12,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
         <li>
             <?php
 
-            echo "<a href=\"".$list[$i]['href']."\"> ";
+            echo "<span class=\"lt_a\"><a href=\"".$list[$i]['href']."\"> ";
             if ($list[$i]['is_notice'])
                 echo "<strong>".$list[$i]['subject']."</strong>";
             else
@@ -22,7 +22,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
             if ($list[$i]['icon_new']) echo " <span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
             if ($list[$i]['icon_hot']) echo " <span class=\"hot_icon\">H<span class=\"sound_only\">인기글</span></span>";
 
-            echo "</a>";
+            echo "</span></a>";
 
             // if ($list[$i]['link']['count']) { echo "[{$list[$i]['link']['count']}]"; }
             // if ($list[$i]['file']['count']) { echo "<{$list[$i]['file']['count']}>"; }
@@ -32,7 +32,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
             //if ($list[$i]['icon_link']) echo " <i class=\"fa fa-link\" aria-hidden=\"true\"></i>" ;
 
             if ($list[$i]['comment_cnt'])  echo "
-            <span class=\"lt_cmt\">(".$list[$i]['comment_cnt'].")</span>";
+            <span class=\"lt_cmt\"><a href=\"".$list[$i]['href']."\">(".$list[$i]['comment_cnt'].")</a></span>";
 
             ?>
 
