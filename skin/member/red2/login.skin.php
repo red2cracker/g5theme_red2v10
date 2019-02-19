@@ -7,7 +7,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
 <!-- 로그인 시작 { -->
 <div id="mb_login" class="mbskin">
-    <h1><?php echo $g5['title'] ?></h1>
+    <p class="go_back"><a href="../" title="Red2.net 홈"><i class="fa fa-chevron-left" aria-hidden="true"></i> Red2.net 으로 돌아가기</a></p>
+
+    <h1><a href="../" title="Red2.net 홈"><img src="<?php echo G5_THEME_URL ?>/skin/member/red2/img/red2mamm_page.png"></a> <?php echo $g5['title'] ?></h1>
 
     <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post">
     <input type="hidden" name="url" value="<?php echo $login_url ?>">
@@ -19,20 +21,23 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
         <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
         <input type="submit" value="로그인" class="btn_submit">
-        <input type="checkbox" name="auto_login" id="login_auto_login">
-        <label for="login_auto_login">자동로그인</label>
+		
+		<div class="auto_login_wrap">
+            <input type="checkbox" name="auto_login" id="login_auto_login">
+            <label for="login_auto_login">자동로그인</label>
+		</div>
     </fieldset>
 
     <?php
     // 소셜로그인 사용시 소셜로그인 버튼
-    @include_once(get_social_skin_path().'/social_login.skin.php');
+    // @include_once(get_social_skin_path().'/social_login.skin.php');
     ?>
 
     <aside id="login_info">
         <h2>회원로그인 안내</h2>
         <div>
-            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">아이디 비밀번호 찾기</a>
-            <a href="./register.php">회원 가입</a>
+            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost"><i class="fa fa-unlock-alt" aria-hidden="true"></i> 아이디 비밀번호 찾기</a>
+            <a href="./register.php"><i class="fa fa-sign-in" aria-hidden="true"></i> 회원 가입</a>
         </div>
     </aside>
 
