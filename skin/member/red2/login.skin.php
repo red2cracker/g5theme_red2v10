@@ -7,9 +7,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
 <!-- 로그인 시작 { -->
 <div id="mb_login" class="mbskin">
-    <p class="go_back"><a href="../" title="Red2.net 홈"><i class="fa fa-chevron-left" aria-hidden="true"></i> Red2.net 으로 돌아가기</a></p>
+    <p class="go_back"><a href="../" title="Red2.net 홈"><i class="fa fa-chevron-left" aria-hidden="true"></i> Red2.net</a></p>
 
-    <h1><a href="../" title="Red2.net 홈"><img src="<?php echo G5_THEME_URL ?>/skin/member/red2/img/red2mamm_page.png"></a> <?php echo $g5['title'] ?></h1>
+    <h1><!--<a href="../" title="Red2.net 홈"><img src="<?php echo G5_THEME_URL ?>/skin/member/red2/img/red2mamm_page.png"></a> --><?php echo $g5['title'] ?></h1>
 
     <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post">
     <input type="hidden" name="url" value="<?php echo $login_url ?>">
