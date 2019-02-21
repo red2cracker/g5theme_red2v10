@@ -12,6 +12,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 
 <!-- 비밀번호 확인 시작 { -->
 <div id="pw_confirm" class="mbskin">
+    <div class="go_back"><a href="../" title="Red2.net 홈">Red2.net</a></div>
+
     <h1><?php echo $g5['title'] ?></h1>
     <p>
         <?php if ($w == 'u') { ?>
