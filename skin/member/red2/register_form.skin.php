@@ -25,21 +25,24 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 <input type="hidden" name="mb_nick" value="<?php echo get_text($member['mb_nick']) ?>">
 <?php }  ?>
  <div id="register_form"  class="form_01">   
+    <h1><?php echo $w==''?'회원가입':'정보수정'; ?></h1>
+	
     <div>
         <h2>사이트 이용정보 입력</h2>
         <ul>
             <li>
                 <label for="reg_mb_id" class="sound_only">아이디<strong>필수</strong></label>
-                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input half_input <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="아이디">
+                <input type="text" name="mb_id" value="<?php echo $member['mb_id'] ?>" id="reg_mb_id" <?php echo $required ?> <?php echo $readonly ?> class="frm_input reg_input_rwd <?php echo $required ?> <?php echo $readonly ?>" minlength="3" maxlength="20" placeholder="아이디">
                 <span id="msg_mb_id"></span>
                 <span class="frm_info">영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요.</span>
             </li>
             <li>
                 <label for="reg_mb_password" class="sound_only">비밀번호<strong class="sound_only">필수</strong></label>
-                <input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="frm_input half_input <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호">
-
+                <input type="password" name="mb_password" id="reg_mb_password" <?php echo $required ?> class="frm_input reg_input_rwd <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호">
+            </li>
+            <li>
                 <label for="reg_mb_password_re" class="sound_only">비밀번호 확인<strong>필수</strong></label>
-                <input type="password" name="mb_password_re" id="reg_mb_password_re" <?php echo $required ?> class="frm_input half_input right_input <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호 확인">
+                <input type="password" name="mb_password_re" id="reg_mb_password_re" <?php echo $required ?> class="frm_input reg_input_rwd <?php echo $required ?>" minlength="3" maxlength="20" placeholder="비밀번호 확인"><!-- right_input -->
             </li>
         </ul>
     </div>
@@ -50,7 +53,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <ul>
             <li>
                 <label for="reg_mb_name" class="sound_only">이름<strong>필수</strong></label>
-                <input type="text" id="reg_mb_name" name="mb_name" value="<?php echo get_text($member['mb_name']) ?>" <?php echo $required ?> <?php echo $readonly; ?> class="frm_input half_input <?php echo $required ?> <?php echo $readonly ?>" size="10" placeholder="이름">
+                <input type="text" id="reg_mb_name" name="mb_name" value="<?php echo get_text($member['mb_name']) ?>" <?php echo $required ?> <?php echo $readonly; ?> class="frm_input reg_input_rwd <?php echo $required ?> <?php echo $readonly ?>" size="10" placeholder="이름">
                 <?php
                 if($config['cf_cert_use']) {
                     if($config['cf_cert_ipin'])
@@ -84,7 +87,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 <label for="reg_mb_nick" class="sound_only">닉네임<strong>필수</strong></label>
                 
                     <input type="hidden" name="mb_nick_default" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>">
-                    <input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="frm_input required nospace  half_input" size="10" maxlength="20" placeholder="닉네임">
+                    <input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="frm_input required nospace  reg_input_rwd" size="10" maxlength="20" placeholder="닉네임">
                     <span id="msg_mb_nick"></span>
                     <span class="frm_info">
                         공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)<br>
@@ -104,7 +107,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                 </span>
                 <?php }  ?>
                 <input type="hidden" name="old_email" value="<?php echo $member['mb_email'] ?>">
-                <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="frm_input email full_input required" size="70" maxlength="100" placeholder="E-mail">
+                <input type="text" name="mb_email" value="<?php echo isset($member['mb_email'])?$member['mb_email']:''; ?>" id="reg_mb_email" required class="frm_input email reg_input_rwd required" size="70" maxlength="100" placeholder="E-mail">
             
             </li>
 
@@ -270,7 +273,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     
 </div>
 <div class="btn_confirm">
-    <a href="<?php echo G5_URL ?>" class="btn_cancel">취소</a>
+    <!--<a href="<?php //echo G5_URL ?>" class="btn_cancel">취소</a>-->
     <input type="submit" value="<?php echo $w==''?'회원가입':'정보수정'; ?>" id="btn_submit" class="btn_submit" accesskey="s">
 </div>
 </form>

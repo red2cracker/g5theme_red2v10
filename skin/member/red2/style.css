@@ -135,18 +135,28 @@ box-shadow: 0 1px 3px #eee;
 #fregister .btn_confirm .btn_submit{height:50px;padding:0 40px;font-weight:bold;font-size:1.083em}
 
 /* 회원가입 입력 */
-#register_form{background:#fff;padding:20px;margin-bottom:20px}
+#register_form{background:#fff;padding:0px;/*20px;*/margin-bottom:20px}
 #fregisterform #msg_certify {margin:5px 0 0;padding:5px;border:1px solid #dbecff;background:#eaf4ff;text-align:center}
 #fregisterform .frm_address {margin:5px 0 0}
 #fregisterform #mb_addr3 {display:inline-block;margin:5px 0 0;vertical-align:middle}
 #fregisterform #mb_addr_jibeon {display:block;margin:5px 0 0}
-#fregisterform .btn_confirm{text-align:center}
+#fregisterform .btn_confirm{text-align:left;/*center*/}
 #fregisterform .btn_confirm .btn_submit{height:45px;;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .btn_confirm .btn_cancel{line-height:45px;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .frm_info{display:block;color:#3497d9;font-size:0.92em}
 #fregisterform .form_01 div{margin: 0 0 50px}
 #fregisterform .captcha{display:block;margin:5px 0 0}
 #fregisterform .reg_mb_img_file img{max-width:100%;height:auto}
+
+/*#fregisterform h1{font-weight:bold;}*/
+/* 반응형 입력창 */
+#fregisterform .reg_input_rwd {width:100%;}
+
+/* 태블릿, PC */
+/* 768px */
+@media (min-width: 426px) {
+#fregisterform .reg_input_rwd {width:400px;}
+}
 
 
 /* 회원가입 완료 */
