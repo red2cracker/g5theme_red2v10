@@ -28,7 +28,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     <h1><?php echo $w==''?'회원가입':'정보수정'; ?></h1>
 	
     <div>
-        <h2>사이트 이용정보 입력</h2>
+        <h2 class="sound_only">사이트 이용정보 입력</h2>
         <ul>
             <li>
                 <label for="reg_mb_id" class="sound_only">아이디<strong>필수</strong></label>
@@ -48,7 +48,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     </div>
 
     <div class="tbl_frm01 tbl_wrap">
-        <h2>개인정보 입력</h2>
+        <h2 class="sound_only">개인정보 입력</h2>
 
         <ul>
             <li>
@@ -157,7 +157,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     </div>
 
     <div class="tbl_frm01 tbl_wrap">
-        <h2>기타 개인설정</h2>
+        <h2 class="sound_only">기타 개인설정</h2>
         <ul>
             <?php if ($config['cf_use_signature']) {  ?>
             <li>
