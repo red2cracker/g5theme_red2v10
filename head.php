@@ -19,7 +19,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 태블릿에서 메뉴가 나옴 -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark d-print-none fixed-top">
 <?//php echo G5_URL ?>
-  <a class="navbar-brand" href="/board" title="Red2.net 홈">
+  <a class="navbar-brand" href="<?php echo G5_URL ?>/" title="Red2.net 홈">
     <!-- <img src="img/red2mamm.svg" width="85" height="70" alt=""> -->
 	<!-- <img src="<?php echo G5_THEME_IMG_URL; ?>/red2mamm.svg" width="65" height="65" alt="로고"> -->
     <span>Red2.</span>net
