@@ -188,7 +188,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
             <?php }  ?>
 
             <li class="is_captcha_use">
-                <strong>자동등록방지</strong>
+                <strong>자동등록방지<span>*</span></strong>
                 <?php echo captcha_html(); ?>
             </li>
         </ul>
