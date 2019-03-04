@@ -309,9 +309,11 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list tr td {
   
 }
-
-
-
+/*
+#bo_list .bo_notice .td_name, #bo_list .bo_notice .td_datetime, #bo_list .bo_notice .td_num {
+  border-bottom: 1px solid #ccc;
+}
+*/
 
 
 /* 스타일 끝 */
