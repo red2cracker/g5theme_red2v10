@@ -233,16 +233,24 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   margin-bottom: 10px;
 }
 
+/*
+#bo_list tbody tr {
+  padding: 5px;
+}
+*/
+
 #bo_list .td_chk {
   display: inline-block;
   float: left;
+  
 }
 #bo_list .td_subject {
-  padding: 0px;
+  
 }
 #bo_list .td_subject a.bo_cate_link {
   display: inline-block !important;
   float: left;
+  margin-right: 6px;
 }
 
 #bo_list .td_subject .bo_tit {
@@ -260,23 +268,34 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   display: inline-block;
   float: left;
   width: 120px;
+  border-top: 0px;
 }
 #bo_list .td_datetime {
   display: inline-block;
   float: left;
   width: 60px;
   text-align: left;
+  border-top: 0px;
+  position: relative;
 }
 #bo_list .td_num {
   display: inline-block;
   float: left;
   width: calc(100% - 180px);
   text-align: left;
+  border-top: 0px;
+  position: relative;
+}
+#bo_list .td_num:before {
+  content: "조회 ";
 }
 
 #bo_list tbody tr {
   clear: both;
 }
+
+
+
 
 
 
