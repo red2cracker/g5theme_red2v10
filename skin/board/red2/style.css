@@ -242,14 +242,16 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list .td_chk {
   display: inline-block;
   float: left;
+  padding-top: 5px !important;
 }
 #bo_list .td_subject {
-  
+
 }
 #bo_list .td_subject a.bo_cate_link {
   display: inline-block !important;
   float: left;
   margin-right: 6px;
+  padding-top: 5px;
 }
 
 #bo_list .td_subject .bo_tit {
@@ -257,8 +259,10 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 }
 #bo_list .td_subject .bo_tit a {
   display: block !important;
+  padding-top: 5px;
 }
 
+/* 한줄이 짤리는 버그 해결 */
 #bo_list .tbl_head01 td {
   height: auto;
 }
@@ -266,8 +270,9 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list .td_name {
   display: inline-block;
   float: left;
-  width: 120px;
+  width: 120px; /* 120px; */
   border-top: 0px;
+  padding-left: 5px;
 }
 #bo_list .td_datetime {
   display: inline-block;
