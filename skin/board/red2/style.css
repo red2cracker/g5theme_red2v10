@@ -280,7 +280,9 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   width: 60px;
   text-align: left;
   border-top: 0px;
-  position: relative;
+/* position: relative;
+  top: 5px;*/
+  line-height: 32px;
 }
 #bo_list .td_num {
   display: inline-block;
@@ -288,7 +290,9 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   width: calc(100% - 180px);
   text-align: left;
   border-top: 0px;
-  position: relative;
+/*  position: relative;
+  top: 5px;*/
+  line-height: 32px;
 }
 #bo_list .td_num:before {
   content: "조회 ";
@@ -299,9 +303,13 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 }
 
 #bo_list .bo_notice td {
-    background: none !important;
-    border: 0px;
+  /*background: none !important;*/
+  border: 0px;
 }
+#bo_list tr td {
+  
+}
+
 
 
 
