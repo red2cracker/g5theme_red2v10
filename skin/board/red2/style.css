@@ -212,10 +212,6 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   display: none;
 }
 
-#bo_list table {
-  border-bottom: 0px;
-}
-
 #bo_list table,
 #bo_list thead,
 #bo_list tbody,
@@ -225,94 +221,56 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   display: block;
 }
 
-#bo_list .td_subject {
-  width: 100%;
-  display: inline-block;
-}
-
-#bo_list tbody tr {
-  position: relative;
-  clear: both;
-}
-
-#bo_list tbody td {
-  border: 0px;
-  height: 33px !important; /* 행 높이 강제 조정 */
-}
-
-#bo_list .td_chk {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  width: auto !important;
-  height: auto !important;
-  border: 0px;
-}
-
-#bo_list .td_name, #bo_list .td_datetime, #bo_list .td_num {
-  display: inline-block;
-  float: left;
-  border-bottom: 1px solid #000;
-}
-
-
-
-#bo_list .td_num {
-  /*width: 150px;*/
-  width: calc(100% - 180px);
-  /*border-bottom: 1px solid #000;*/
-  text-align: left;
-}
-
-#bo_list .td_num:before {
-  content: "조회 ";
-}
-
-/*
-#bo_list .bo_cate_link, #bo_list .subject_trim, #bo_list .icon_reply {
-  position: relative;
-  top: 10px;
-}
-*/
-
-#bo_list .bo_cate_link, #bo_list .icon_reply {
-  position: relative;
-  top: 0px;
-}
-
-#bo_list .td_name .sv_member, #bo_list .td_name .sv_guest {
-  padding-top: 5px !important;
-  padding-left: 5px !important;
-}
-
-#bo_list .td_datetime, #bo_list .td_num {
-  padding-top: 5px !important;
-}
-
-#bo_list .cnt_cmt {
-  position: relative;
-  top: 0px;
-}
-
 /* 테이블 행에 호버시 왼쪽 외곽선 삭제 */
 #bo_list tbody tr:hover {
   border-left: 0px;
 }
 
-/* 맨 아래 텍스트가 튀어나오는 버그 */
-#bo_list table {
-  width: 100%;
+#bo_list .td_chk {
+  display: inline-block;
   float: left;
-  margin-bottom: 10px;
+}
+#bo_list .td_subject {
+  padding: 0px;
+}
+#bo_list .td_subject a.bo_cate_link {
+  display: inline-block !important;
+  float: left;
 }
 
-#bo_list .subject_trim {
-  max-width: 180px;
-  /*max-width: calc(100% - 10px);*/
-  display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
-  position: relative;
-  top: 5px;
+#bo_list .td_subject .bo_tit {
+  display: block !important;
 }
+#bo_list .td_subject .bo_tit a {
+  display: block !important;
+}
+
+#bo_list .tbl_head01 td {
+  height: auto;
+}
+
+#bo_list .td_name {
+  display: inline-block;
+  float: left;
+  width: 120px;
+}
+#bo_list .td_datetime {
+  display: inline-block;
+  float: left;
+  width: 60px;
+  text-align: left;
+}
+#bo_list .td_num {
+  display: inline-block;
+  float: left;
+  width: calc(100% - 180px);
+  text-align: left;
+}
+
+#bo_list tbody tr {
+  clear: both;
+}
+
 
 
 /* 스타일 끝 */
