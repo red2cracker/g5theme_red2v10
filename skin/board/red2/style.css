@@ -242,7 +242,6 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
 #bo_list .td_chk {
   display: inline-block;
   float: left;
-  
 }
 #bo_list .td_subject {
   
@@ -294,7 +293,10 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   clear: both;
 }
 
-
+#bo_list .bo_notice td {
+    background: none !important;
+    border: 0px;
+}
 
 
 
