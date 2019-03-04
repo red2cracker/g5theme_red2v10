@@ -226,6 +226,13 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   border-left: 0px;
 }
 
+/* 맨 아래 텍스트가 튀어나오는 버그 */
+#bo_list table {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
 #bo_list .td_chk {
   display: inline-block;
   float: left;
