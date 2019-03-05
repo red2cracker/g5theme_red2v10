@@ -44,17 +44,15 @@ if (G5_IS_MOBILE) {
 -->
 
       <nav class="nav-local d-print-none">
-        <h2>커뮤니티</h2>
+        <h2>기타</h2>
 
         <ul>
-          <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=free">자유 게시판</a></li>
-          <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=cnc">C&amp;C 게시판</a></li>
-		  <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=qna">Q&amp;A 게시판</a></li>
-		  <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=tip">팁게시판</a></li>
-		  <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=mod_tutorial">모드 강좌</a></li>
-		  <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=comic">팬픽</a></li>
-		  <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=suggest">건의사항</a></li>
-		  <li><a href="http://localhost/comm/link.php">링크</a></li>
+          <li><a href="http://localhost/other/about_us.php">사이트 소개</a></li>
+		  <li><a href="http://localhost/other/staff.php">운영진</a></li>
+		  <li><a href="http://localhost/other/history.php">연혁</a></li>
+		  <li><a href="http://localhost/other/donation.php">후원하기</a></li>
+		  <li><a href="http://red2.net/gnuboard5/bbs/board.php?bo_table=sponsor">후원자 명단</a></li>
+		  <li><a href="http://localhost/other/rules.php">회칙</a></li>
         </ul>
       </nav>
 
