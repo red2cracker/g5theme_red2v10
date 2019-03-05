@@ -261,6 +261,9 @@ display:inline-block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;p
   display: block !important;
   padding-top: 5px;
 }
+#bo_list .td_subject .bo_tit .icon_reply {
+  padding-top: 5px;
+}
 
 /* 한줄이 짤리는 버그 해결 */
 #bo_list .tbl_head01 td {
