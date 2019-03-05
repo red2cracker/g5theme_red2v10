@@ -84,7 +84,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 		  <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=mod_tutorial">모드 강좌</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=comic">팬픽</a>
           <a class="dropdown-item" href="http://red2.net/gnuboard5/bbs/board.php?bo_table=suggest">건의사항</a>
-          <a class="dropdown-item" href="http://red2.net/comm2/link.html">링크</a>
+          <a class="dropdown-item" href="http://localhost/comm/link.php">링크</a>
         </div>
       </li>
       <li class="nav-item dropdown">

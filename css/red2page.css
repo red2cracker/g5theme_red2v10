@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 개별 페이지 */
+
+.ind-page a:link, .ind-page a:visited {
+  color: #00f;
+}
+
+.ind-page a:focus, .ind-page a:hover {
+  color: #f00;
+  text-decoration: underline;
+}
+
+
+.ind-page ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
