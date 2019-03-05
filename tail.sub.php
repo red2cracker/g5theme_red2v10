@@ -20,63 +20,7 @@ $(function() {
 </script>
 <![endif]-->
 
-<script>
 
-$(document).ready(function() {
-
-
-function tbody_tr_href(a) {
-
-//eq(0-14)
-$("#bo_list tbody tr").eq(a).click(function() {
-    var href = $("#bo_list .td_subject .bo_tit a").eq(a).attr("href");
-    $(location).attr('href',href);
-	
-    //alert(href);
-});
-
-}
-
-
-var tbody_tr_count = $("#bo_list tbody tr").length -1; //15 - 1 = 14
-
-function add_href() {
-
-for(a = 0; a <= tbody_tr_count; a++){
-  tbody_tr_href(a);
-  //alert(a);
-}
-
-}
-
-//add_href();
-
-
-var width_size = window.outerWidth;
-
-$(window).load(function (){
-  if (width_size <= 767) {
-    //add_href();
-	//alert('test');
-  }
-});
-
-$(window).resize(function (){
-  if (width_size <= 767) {
-    //add_href();
-	//alert('test');
-  }
-});
-
-
-
-
-
-
-
-});
-
-</script>
 
 </body>
 </html>
