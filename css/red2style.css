@@ -6,7 +6,7 @@
 
 
 html {
-  -webkit-tap-highlight-color: rgba(0, 0, 255, 0.3);
+  -webkit-tap-highlight-color: #acdff0; /*rgba(0, 0, 255, 0.3);*/
   /*overflow-x: hidden;*/
 }
 
