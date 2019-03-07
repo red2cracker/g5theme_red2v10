@@ -4,6 +4,24 @@ include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
+
+// 최신글로 끌어올림
+$moveup_date = date('Y-m-d H:i:s', strtotime($view['wr_datetime'] . ' +24 hours')); // 끌어올림 허용 날짜(24시간 후 가능)
+$moveup_level = 2; // 끌어올림 허용레벨 (2레벨 이상)
+$moveup_point = 500; // 끌어올림 포인트 차감
+
+// 끌어올림 버튼 링크
+$moveup_href = '';
+if(($member['mb_level'] >= $moveup_level) || $is_admin) {
+
+        if ($moveup_date > G5_TIME_YMDHIS) {
+		    $moveup_href = "javascript:alert('끌어올림이 가능 한 시간({$moveup_date})이 아닙니다.')";
+        } else if ($member['mb_point'] < $moveup_point) {
+            $moveup_href = "javascript:alert('끌어올림 포인트가 부족합니다. (끌어올림 포인트:{$moveup_point})')";	
+        } else {
+            $moveup_href = './board.php?bo_table='.$bo_table.'&amp;wr_id='.$wr_id.'&cmd=move_up';
+        }    
+}
 ?>
 
 <script src="<?php echo G5_JS_URL; ?>/viewimageresize.js"></script>
@@ -101,6 +119,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         ?>
 
         <ul class="bo_v_left">
+		    <?php if ($moveup_href) { ?><li><a href="<?php echo $moveup_href ?>" class="btn_b01 btn" onclick="return confirm('이글을 최신글로 끌어올림 할까요?')"><i class="fa fa-arrow-up" aria-hidden="true"></i> 끌어올림</a></li><?php } ?>
             <?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>" class="btn_b01 btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 수정</a></li><?php } ?>
             <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" class="btn_b01 btn" onclick="del(this.href); return false;"><i class="fa fa-trash-o" aria-hidden="true"></i> 삭제</a></li><?php } ?>
             <?php if ($copy_href) { ?><li><a href="<?php echo $copy_href ?>" class="btn_admin btn" onclick="board_move(this.href); return false;"><i class="fa fa-files-o" aria-hidden="true"></i> 복사</a></li><?php } ?>
@@ -109,11 +128,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         </ul>
 
         <ul class="bo_v_com">
-		   <!-- <li><a class="btn_b01 btn" onclick="new_up()"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 점프</a></li> -->
-		   
-		   <!-- http://www.happyjung.com/lecture/2718 -->
-		   <?php if($is_admin || $update_href) { ?><li><a href="<?php echo $board_skin_url; ?>/update_first.php?bo_table=<?php echo $bo_table; ?>&wr_id=<?php echo $wr_id; ?>" class="btn_b01 btn"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i> 위로</a></li><?php } ?>
-		   
            <li><a href="<?php echo $list_href ?>" class="btn_b01 btn"><i class="fa fa-list" aria-hidden="true"></i> 목록</a></li>
             <?php if ($reply_href) { ?><li><a href="<?php echo $reply_href ?>" class="btn_b01 btn"><i class="fa fa-reply" aria-hidden="true"></i> 답변</a></li><?php } ?>
             <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02 btn"><i class="fa fa-pencil" aria-hidden="true"></i> 글쓰기</a></li><?php } ?>
